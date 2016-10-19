@@ -13,9 +13,8 @@
 <!--Toolbar-->
 
 <md-toolbar class="md-hue-2">
-    
-    
-    
+
+
     <!--<div class="md-toolbar-tools">
         <h2 flex="15">
             <span>RECRATINGS</span>
@@ -33,149 +32,331 @@
             <i class="material-icons">menu</i>
         </md-button>
     </div>-->
-    
-    
-    
+
+
     <div class="md-toolbar-tools">
-     
+
         <h2>
             <span>RECRATINGS</span>
         </h2>
-        <span class="input1" hide-xs> <input type="text" class="input-1" placeholder="Find and rate a coach or club/event"></span>
+        <span class="input1" hide-xs> <input type="text" class="input-1"
+                                             placeholder="Find and rate a coach or club/event"></span>
         <span class="input1" hide-xs> <input type="text" class="input-2" placeholder="Chicago"></span>
-        <span class="search-icon" hide-xs>
+        <span class="search-icon">
            <button class="md-icon-div searchBtn">
             <i class="material-icons">search</i>
         </button></span>
         <span flex></span>
-        <md-button hide-xs hide-xl >ABOUT</md-button>
-        <md-button hide-xs hide-xl >BLOG</md-button>
-        <md-button hide-xs hide-xl >CONTACTS</md-button>
+        <md-button hide-xs hide-xl>ABOUT</md-button>
+        <md-button hide-xs hide-xl>BLOG</md-button>
+        <md-button hide-xs hide-xl>CONTACTS</md-button>
         <md-button hide-lg hide-xl hide-gt-lg hide-gt-md hide-md hide-gt-sm show-xs class="md-icon-div">
             <i class="material-icons">menu</i>
         </md-button>
-      </div>
+    </div>
 </md-toolbar>
 
 <!--Toolbar End-->
 
 
-
+<div layout="row">
     <div layout="column" flex="30" hide-xs>
-     
-     <!--main background-->
-      <div class="main-background">  
-        <div layout="row" class="cochesClubDiv">
-         <div class="coaches">
-          <div hide-xs >COACHES</div>
-          <div hide-xs ng-if="coaches">COACHES</div>
-        </div>
-        <div class="clubs">
-          <div hide-xs >CLUBS & Events</div>
-          <div hide-xs ng-if="coaches">CLUBS & Events</div>
-        </div>
-        </div>
-        <div layout="row" class="sorting">
-                      <div hide-xs class="sortBorder">SORT BY NAME</div>
-                      <div hide-xs class="sortBorder">SORT BY SPORT</div>
-                    <div hide-xs class="sortBorder">SORT BY CLUB</div>
-        </div>
-        
+
+        <!--main background-->
+        <div class="main-background">
+            <div layout="row" class="cochesClubDiv">
+                <div class="coaches">
+                    <div hide-xs>COACHES</div>
+                    <div hide-xs ng-if="coaches">COACHES</div>
+                </div>
+                <div class="clubs">
+                    <div hide-xs>CLUBS & Events</div>
+                    <div hide-xs ng-if="coaches">CLUBS & Events</div>
+                </div>
+            </div>
+            <div layout="row" class="sorting">
+                <div hide-xs class="sortBorder">SORT BY NAME</div>
+                <div hide-xs class="sortBorder">SORT BY SPORT</div>
+                <div hide-xs class="sortBorder">SORT BY CLUB</div>
+            </div>
+
         </div>
         <!--main Background finshed-->
-        
+
         <!--rated-->
-        
+
         <div layout="row" class="ratedDiv">
             <p style="padding-top: 14px; padding-left:9px;">113 coaches found</p>
-         <span flex></span>
-         <md-input-container flex="30">
-          <label>Most rated</label>
-          <md-select name="type" ng-model="project.type" required>
-            <md-option value="app">Application</md-option>
-            <md-option value="web">Website</md-option>
-          </md-select>
-        </md-input-container>
+            <span flex></span>
+            <md-input-container flex="30">
+                <label>Most rated</label>
+                <md-select name="type" ng-model="project.type" required>
+                    <md-option value="app">Application</md-option>
+                    <md-option value="web">Website</md-option>
+                </md-select>
+            </md-input-container>
         </div>
         <!--rated finished-->
-    
-    <hr style="width: 88%; border: 1px solid grey;"/>
-    
-    <!--main box started-->
-    
-    <div style="background-color:white;margin-top: 20px;">
-        
-        <div layout="row" class="mainBoxStarted">
-           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
-           </div>
-             <div layout="column">
-             <h4>Moults Wyatt</h4>
-             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
-             </div>
-             <span flex></span>
-              <div class="mainIcon">
-                  <span class="mainBoxRating">5.0</span> </div>
+
+        <hr style="width: 88%; border: 1px solid grey;"/>
+
+        <!--main box started-->
+
+        <div style="background-color:white;margin-top: 20px;">
+
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+            <div layout="row" class="mainBoxStarted">
+                <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+                </div>
+                <div layout="column">
+                    <h4>Moults Wyatt</h4>
+                    <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+                </div>
+                <span flex></span>
+                <div class="mainIcon">
+                    <span class="mainBoxRating">5.0</span></div>
+            </div>
+
         </div>
-                <div layout="row" class="mainBoxStarted">
-           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
-           </div>
-             <div layout="column">
-             <h4>Moults Wyatt</h4>
-             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
-             </div>
-             <span flex></span>
-              <div class="mainIcon">
-                  <span class="mainBoxRating">5.0</span> </div>
-        </div>
-          <div layout="row" class="mainBoxStarted">
-           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
-           </div>
-             <div layout="column">
-             <h4>Moults Wyatt</h4>
-             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
-             </div>
-             <span flex></span>
-              <div class="mainIcon">
-                  <span class="mainBoxRating">5.0</span> </div>
-        </div>
-          <div layout="row" class="mainBoxStarted">
-           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
-           </div>
-             <div layout="column">
-             <h4>Moults Wyatt</h4>
-             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
-             </div>
-             <span flex></span>
-              <div class="mainIcon">
-                  <span class="mainBoxRating">5.0</span> </div>
-        </div>
-        
+
+
+        <!--main box end-->
+
+
     </div>
-    
-    
-    
-    <!--main box end-->
-    
-    
-    
+    <div layout="=column" style="border: 25px grey solid;padding: 10px" flex>
+        <md-content flex>
+            <md-list>
+                <md-list-item class="md-3-line">
+                    <img src="./images/green-smiley-face-clip-art-emotions-happy-green-face-md.png" class="md-avatar"/>
+                    <div class="md-list-item-text" layout="column">
+                        <h3>Moults Wyatt</h3>
+                        <p>Football coach at <a href="#">Southern Lines International</a></p>
+                        <p><i style="vertical-align: bottom" class="material-icons">place</i> 1450 W Cernol road,
+                            Chicago,
+                            IL 6080</p>
+                    </div>
+                </md-list-item>
+            </md-list>
+
+            <md-divider></md-divider>
+
+            <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1"
+                          md-gutter="12px" md-gutter-gt-sm="8px">
+
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h1 style="color:lime;font-size: 4em">4.7</h1>&nbsp&nbsp<span>80 ratings</span>
+                </md-grid-tile>
+                <md-divider class="vertical-divider"></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h2>60%</h2>&nbsp &nbsp
+                    <p>Parents are recommended</p>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h2>4.8</h2>&nbsp &nbsp
+                    <p>Level of Competitiveness</p>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+                <md-grid-tile style="text-align: center !important;" md-rowspan="3" md-colspan="2" md-colspan-sm="2"
+                              md-colspan-xs="2">
+                    <h2>4.8</h2>&nbsp &nbsp
+                    <p>Player's health rating</p>
+                </md-grid-tile>
+
+            </md-grid-list>
+            <md-divider></md-divider>
+            <div>
+                <h2>Top 5 tags for this Coach</h2>
+                <md-chips>
+                    <md-chip>GOOD</md-chip>
+                    <md-chip>TALENTED</md-chip>
+                    <md-chip>COACH</md-chip>
+                    <md-chip>MOTIVATED</md-chip>
+                    <md-chip>ALL-STAR</md-chip>
+                    <md-chip><a href="#">show more</a></md-chip>
+                </md-chips>
+            </div>
+            <h2>80 Parent Ratings</h2>
+            <section layout="row" layout-sm="column" layout-wrap>
+                <select class="input-1" style="width:100%" flex="25">
+                    <option><em>None</em></option>
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </select>
+                <span class="input1"><input type="text" class="input-1" placeholder="Start adding your comment here"
+                                            style="width: 100%;
+                padding: 15px" flex></span>
+                <md-button class="md-raised md-primary green" flex="30">Primary</md-button>
+            </section>
+            <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1"
+                          md-gutter="12px" md-gutter-gt-sm="8px">
+
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h1 style="color:lime;font-size: 4em">3.4</h1>
+                </md-grid-tile>
+                <md-divider class="vertical-divider"></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <span>Would recommended?  <b>Yes</b></span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                            <span>abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh
+                            abcd efgh abcd efgh abcd efghabcd efgh</span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+
+            </md-grid-list>
+            <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1"
+                          md-gutter="12px" md-gutter-gt-sm="8px">
+
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h1 style="color:lime;font-size: 4em">3.4</h1>
+                </md-grid-tile>
+                <md-divider class="vertical-divider"></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <span>Would recommended?  <b>Yes</b></span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                            <span>abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh
+                            abcd efgh abcd efgh abcd efghabcd efgh</span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+
+            </md-grid-list>
+            <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1"
+                          md-gutter="12px" md-gutter-gt-sm="8px">
+
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <h1 style="color:lime;font-size: 4em">3.4</h1>
+                </md-grid-tile>
+                <md-divider class="vertical-divider"></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                    <span>Would recommended?  <b>Yes</b></span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+                <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
+                            <span>abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh abcd efgh
+                            abcd efgh abcd efgh abcd efghabcd efgh</span>
+                </md-grid-tile>
+                <md-divider vertical></md-divider>
+
+            </md-grid-list>
+
+            <!--<div layout="row">
+                <md-input-container>
+                    <label><i class="material-icons">wifi</i>Most Recent</label>
+                    <md-select>
+                        <md-option><em>None</em></md-option>
+                        <md-option>one</md-option>
+                        <md-option>two</md-option>
+                        <md-option>three</md-option>
+                    </md-select>
+                </md-input-container>
+            </div>-->
+        </md-content>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 <script src="node_modules/angular/angular.min.js"></script>
