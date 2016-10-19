@@ -5,28 +5,176 @@
     <title>Responsive UI</title>
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body ng-controller="mainController as app">
 
+
+<!--Toolbar-->
+
 <md-toolbar class="md-hue-2">
-    <div class="md-toolbar-tools">
+    
+    
+    
+    <!--<div class="md-toolbar-tools">
         <h2 flex="15">
             <span>RECRATINGS</span>
         </h2>
         <span flex="20" hide-xs><input type="text" placeholder="Find and rate a coach or club/event"></span>
         <span flex="15" hide-xs><input type="text" placeholder="Chicago, II"></span>
-        <md-button flex="5" class="md-icon-button md-primary">
+        <md-button flex="5" class="md-icon-div md-primary">
             <i class="material-icons">search</i>
         </md-button>
         <span flex></span>
         <md-button hide-xs>ABOUT</md-button>
         <md-button hide-xs>BLOG</md-button>
         <md-button hide-xs>CONTACTS</md-button>
-        <md-button hide-lg hide-xl hide-gt-lg hide-gt-md hide-md hide-gt-sm show-xs class="md-icon-button">
+        <md-button hide-lg hide-xl hide-gt-lg hide-gt-md hide-md hide-gt-sm show-xs class="md-icon-div">
             <i class="material-icons">menu</i>
         </md-button>
-    </div>
+    </div>-->
+    
+    
+    
+    <div class="md-toolbar-tools">
+     
+        <h2>
+            <span>RECRATINGS</span>
+        </h2>
+        <span class="input1" hide-xs> <input type="text" class="input-1" placeholder="Find and rate a coach or club/event"></span>
+        <span class="input1" hide-xs> <input type="text" class="input-2" placeholder="Chicago"></span>
+        <span class="search-icon" hide-xs>
+           <button class="md-icon-div searchBtn">
+            <i class="material-icons">search</i>
+        </button></span>
+        <span flex></span>
+        <md-button hide-xs hide-xl >ABOUT</md-button>
+        <md-button hide-xs hide-xl >BLOG</md-button>
+        <md-button hide-xs hide-xl >CONTACTS</md-button>
+        <md-button hide-lg hide-xl hide-gt-lg hide-gt-md hide-md hide-gt-sm show-xs class="md-icon-div">
+            <i class="material-icons">menu</i>
+        </md-button>
+      </div>
 </md-toolbar>
+
+<!--Toolbar End-->
+
+
+
+    <div layout="column" flex="30" hide-xs>
+     
+     <!--main background-->
+      <div class="main-background">  
+        <div layout="row" class="cochesClubDiv">
+         <div class="coaches">
+          <div hide-xs >COACHES</div>
+          <div hide-xs ng-if="coaches">COACHES</div>
+        </div>
+        <div class="clubs">
+          <div hide-xs >CLUBS & Events</div>
+          <div hide-xs ng-if="coaches">CLUBS & Events</div>
+        </div>
+        </div>
+        <div layout="row" class="sorting">
+                      <div hide-xs class="sortBorder">SORT BY NAME</div>
+                      <div hide-xs class="sortBorder">SORT BY SPORT</div>
+                    <div hide-xs class="sortBorder">SORT BY CLUB</div>
+        </div>
+        
+        </div>
+        <!--main Background finshed-->
+        
+        <!--rated-->
+        
+        <div layout="row" class="ratedDiv">
+            <p style="padding-top: 14px; padding-left:9px;">113 coaches found</p>
+         <span flex></span>
+         <md-input-container flex="30">
+          <label>Most rated</label>
+          <md-select name="type" ng-model="project.type" required>
+            <md-option value="app">Application</md-option>
+            <md-option value="web">Website</md-option>
+          </md-select>
+        </md-input-container>
+        </div>
+        <!--rated finished-->
+    
+    <hr style="width: 88%; border: 1px solid grey;"/>
+    
+    <!--main box started-->
+    
+    <div style="background-color:white;margin-top: 20px;">
+        
+        <div layout="row" class="mainBoxStarted">
+           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+           </div>
+             <div layout="column">
+             <h4>Moults Wyatt</h4>
+             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+             </div>
+             <span flex></span>
+              <div class="mainIcon">
+                  <span class="mainBoxRating">5.0</span> </div>
+        </div>
+                <div layout="row" class="mainBoxStarted">
+           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+           </div>
+             <div layout="column">
+             <h4>Moults Wyatt</h4>
+             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+             </div>
+             <span flex></span>
+              <div class="mainIcon">
+                  <span class="mainBoxRating">5.0</span> </div>
+        </div>
+          <div layout="row" class="mainBoxStarted">
+           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+           </div>
+             <div layout="column">
+             <h4>Moults Wyatt</h4>
+             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+             </div>
+             <span flex></span>
+              <div class="mainIcon">
+                  <span class="mainBoxRating">5.0</span> </div>
+        </div>
+          <div layout="row" class="mainBoxStarted">
+           <div class="mainIcon"><i class="material-icons" style="font-size: 45px;">insert_emoticon</i>
+           </div>
+             <div layout="column">
+             <h4>Moults Wyatt</h4>
+             <p style="font-size:13px; color:gray;margin-top: -13px;"> 80 ratings</p>
+             </div>
+             <span flex></span>
+              <div class="mainIcon">
+                  <span class="mainBoxRating">5.0</span> </div>
+        </div>
+        
+    </div>
+    
+    
+    
+    <!--main box end-->
+    
+    
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,103 @@
+.input1{
+     margin-left: 25px;
+
+ }
+ .input-1{
+     padding-bottom: 3px;
+     padding-right: 53px;
+        
+ }
+ 
+ .input1 ::-webkit-input-placeholder{
+     
+     font-size: 13px;
+     padding-left:  16px;
+     padding-top: 5px;
+     padding-bottom: 34px;
+     
+   }
+ .input-1 input[type="text"]{
+     font-size: 13px;
+     padding-left:  16px;
+     padding-top: 5px;
+     padding-bottom: 34px;
+     /*padding-left:  16px;
+     padding-top: 5px;*/
+   }
+ 
+ .input-2 input[type="text"]{
+     width: 190px;
+     padding-left:  16px;
+     padding-top: 5px;
+ }
+ .search-icon{
+    padding-left: 1px;
+    padding-top: 4px;
+ }
+ 
+ .main-background{
+     background-color: rgba(211, 211, 211, 0.25);
+     text-align: center;
+ }
+ 
+ .coaches{
+     padding: 10px;
+    padding-left: 36px;
+    border: 1px solid blue;
+    padding-right: 37px;
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+ }
+ .clubs{
+    padding: 10px;
+    padding-left: 36px;
+    /*border: 1px solid blue;*/
+    padding-right: 37px;
+    background-color: white;
+    color: black;
+        font-size: 12px;
+
+ }
+ .cochesClubDiv{
+      padding: 34px;
+ }
+ 
+ .sorting{
+     padding: 10px;
+ }
+ 
+ .sortBorder{
+     border: 2px solid rgba(128, 128, 128, 0.41);
+     padding: 6px;
+    font-size: 12px;
+     margin-left: 9px;
+     background-color: white;
+     color: black;
+     font-weight: bold;
+ }
+ .ratedDiv{
+     padding: 10px;
+     padding-bottom: 63px;
+ }
+ .mainBoxStarted{
+     padding:10px;
+ }
+ .mainIcon{
+     margin:18px;
+ }
+.mainBoxRating{
+    border: 1px solid green;
+    background: green;
+    color: white;
+    padding: 9px;
+}
+.mainBox{
+    background-color: white;
+}
+.searchBtn{
+    background: none;
+    border: none;
+    color: white;
+    padding-left: 32px;
+}
