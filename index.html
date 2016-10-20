@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Angular Material requires Angular.js Libraries -->
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-animate.min.js"></script>
+  <script src="node_modules/angular-aria.min.js"></script>
+  <script src="node_modules/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="node_modules/angular-material/angular-material.min.js"></script>
+        <script src="js/app.js"></script>
+
+    
 </head>
 
 <body ng-controller="mainController as app">
@@ -41,9 +53,9 @@
             <h2>
                 <span>RECRATINGS</span>
             </h2>
-            <span class="input1" hide-xs> <input type="text" class="input-1"
-                                             placeholder="Find and rate a coach or club/event"></span>
-            <span class="input1" hide-xs> <input type="text" class="input-2" placeholder="Chicago"></span>
+            <span class="input1" hide-xs> 
+                <input type="text" class="input-1" placeholder="Find and rate a coach or club/event"></span>
+            <span class="input2" hide-xs> <input type="text" class="input-2" placeholder="Chicago"></span>
             <span class="search-icon">
            <button class="md-icon-div searchBtn">
             <i class="material-icons">search</i>
@@ -224,37 +236,94 @@
 
 
         </div>
+        
+        
         <div layout="=column" style="border: 25px grey solid;padding: 10px" flex>
-            <md-content flex>
+            <md-content flex style="background-color:white; overflow:hidden;">
+              <div class="crossBtn">
+               <button class="cancelBtn"> <i class="material-icons">clear</i> </button>
+                </div>
                 <md-list>
                     <md-list-item class="md-3-line">
                         <img src="./images/face.png" class="img" />
-                        <div class="md-list-item-text" layout="column">
-                            <span class="font">&nbsp; Moults Wyatt</span>
+                        <div class="md-list-item-text" layout="column" style="margin-top: -14px;margin-left: 17px;">
+                            <h2 style="margin-bottom: 5px;">Moults Wyaat</h2>
+                            <p style="font-weight: bold;">Football coach at <a href="#" class="link">Southern Lines International</a></p>
+                            <p style="margin-left: -5px; font-weight: bold;"><i style="vertical-align: bottom" class="material-icons">place</i> 1450 W Cernol road, Chicago,
+                                IL 6080</p>
+                            <!--<span class="font">&nbsp; Moults Wyatt</span>
                             <p>&nbsp; Football coach at <a href="#" class="link">Southern Lines International</a></p>
                             <p><i style="vertical-align: bottom" class="material-icons">place</i> 1450 W Cernol road, Chicago,
-                                IL 6080</p>
+                                IL 6080</p>-->
                         </div>
                     </md-list-item>
                 </md-list>
+                    <!--<span flex></span>-->
 
 
-                <span> 
-                  <md-button class="button"> RATE THIS COACH </md-button>
+                <span style="padding:10px;"> 
+                  <button class="rateCoachBtn"> RATE THIS COACH </button>
                 <span class="icon">
                 <sup style="color: gray"> Share with friends &nbsp;&nbsp;</sup>
-                <a href=""> <img src="./images/facebook.png" alt="facebook" /></a>
+                <a href=""> <img src="./images/Facebook.png" alt="facebook" /></a>
                 <a href=""> <img src="./images/g.png" alt="gmail" /></a>
                 <a href=""> <img src="./images/twitter.png" alt="twitter" /></a>
                 </span>
                 </span>
                 <br/>
                 <br/>
+                <br/>
                 <!-- becomes this at runtime: -->
 
                 <md-divider></md-divider>
+                
+                <!--Rating View-->
+                <div layout="row">
+                    <div layout="row">
+                       <p class="ratingValue">4.7</p> 
+                    
+                    <div class="rating80">
+                       <p>80 ratings</p> 
+                    </div>
+                    <div class="rating80">
+                        <p style="margin-top: 14px;"><i class="material-icons">help_outline</i></p>
+                    </div>
+                    </div>
+                    
+                    <div class="verticalLine"></div>
+                    
+                    <div layout="column">
+                        <p class="column60">60%</p>
+                        <p class="parentsRecomended">Parents are recomended</p>
+                    </div>
 
-                <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1" md-gutter="12px" md-gutter-gt-sm="8px">
+
+                 <div class="verticalLine"></div>
+
+                   <div layout="column">
+                        <p class="column60">4.8</p>
+                        <p class="parentsRecomended">Level of Competitiveness</p>
+                    </div>
+                    
+                    
+                    <div class="verticalLine"></div>
+                    
+                     <div layout="column">
+                        <p class="column60">4.8</p>
+                        <p class="parentsRecomended">Player's health rating</p>
+                    </div>
+                    
+                </div>
+                
+                 
+                 
+
+                
+                
+                
+                <!--rating view-->
+
+                <!--<md-grid-list md-cols-xs="1" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1" md-gutter="12px" md-gutter-gt-sm="8px">
 
                     <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
                         <h1 style="color:lime;font-size: 4em">4.7</h1>&nbsp&nbsp<span>80 ratings</span>
@@ -275,33 +344,205 @@
                         <p>Player's health rating</p>
                     </md-grid-tile>
 
-                </md-grid-list>
-                <md-divider></md-divider>
+                </md-grid-list>-->
+               <md-divider></md-divider>
+               
+               <!--top tags started-->
+               
                 <div>
-                    <h2>Top 5 tags for this Coach</h2>
-                    <md-chips>
+                    <h3>Top 5 tags for this Coach</h3>
+                    <!--<md-chips>
                         <md-chip>GOOD</md-chip>
                         <md-chip>TALENTED</md-chip>
                         <md-chip>COACH</md-chip>
                         <md-chip>MOTIVATED</md-chip>
                         <md-chip>ALL-STAR</md-chip>
                         <md-chip><a href="#">show more</a></md-chip>
-                    </md-chips>
+                    </md-chips>-->
+                    
+                    <div layout="row">
+                        <div class="chip"> Good </div>
+                        <div class="chip">TALENTED</div>
+                        <div class="chip">COACH</div>
+                        <div class="chip">MOTIVATED</div>
+                        <div class="chip">ALL-STAR</div>
+                    <div class="showMore"><i class="material-icons addicon">add</i> &nbsp; SHOW MORE</div> 
+                    </div>
                 </div>
-                <h2>80 Parent Ratings</h2>
-                <section layout="row" layout-sm="column" layout-wrap>
-                    <select class="input-1" style="width:100%" flex="25">
+                
+              
+               <md-divider style="margin-top: 34px;"></md-divider>
+
+                <h3>80 Parent Ratings</h3>
+                <div layout="row" layout-wrap>
+                    <!--<select class="input-1" style="width:100%" flex="25">
                     <option><em>None</em></option>
                     <option>one</option>
                     <option>two</option>
                     <option>three</option>
-                </select>
-                    <span class="input1"><input type="text" class="input-1" placeholder="Start adding your comment here"
-                                            style="width: 100%;
-                padding: 15px" flex></span>
-                    <md-button class="md-raised md-primary green" flex="30">Primary</md-button>
-                </section>
-                <md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1" md-gutter="12px" md-gutter-gt-sm="8px">
+                </select>-->
+                <md-input-container flex="30">
+                    <label>Most Recent</label>
+                    <md-select name="type" ng-model="project.type" required>
+                        <md-option value="app">Application</md-option>
+                        <md-option value="web">Website</md-option>
+                    </md-select>
+                </md-input-container>
+                
+                
+                    <span class="commentclas">
+                        <input type="text" class="" placeholder="Start adding your comment here">
+                </span>
+                    <button class="primaryBtn">Primary</button>
+                </div>
+                
+                
+                
+                <!--comments started-->
+                
+                <div layout="column">
+                    
+                    
+                    <div layout="row" style="padding: 15px;">
+                        
+                        
+                            <div layout="column" style="width: 50%;">
+                            <p style="font-size: 53px;color: orange; margin-bottom:5px;">3.4</p>
+                            <p>25 Nov 2016</p>
+                            </div>
+                            <div layout="column" style="width: 90%;" class="para">
+                                <p>Would recomended: <b>YES</b></p>
+                                <p>Level of Competitiveness: <b>6.8</b></p>
+                                <p>Saftey: <b>6.8</b></p>
+                            </div>
+                            <div layout="column" style="width: 90%;padding:15px; padding-top:1px;" class="para">
+                         <div layout="row" style="padding-right:23px;">
+                         <div class="chip">GOOD</div>
+                        <div class="chip">TALENTED</div>
+                         <div class="chip">COACH</div>
+                      </div>
+                           <div style="padding-right:23px;">
+                               
+                               <p style="text-align:justify;">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sunt, totam tempore nulla? Repudiandae in soluta amet ipsum ullam, aut vitae eligendi fugit ipsam repellat minima. Et esse, assumenda. Amet!
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, dignissimos et ullam magnam deleniti, dolorem eos quasi quia cupiditate distinctio voluptatem vero a numquam obcaecati, similique error maiores beatae enim.
+                               </p>
+                               
+                               </div>     
+                            </div>
+                        </div>
+                        
+                        
+                                        
+                    
+               <md-divider></md-divider>
+
+                    
+                    
+                    
+                    
+                                        <div layout="row" style="padding: 15px;">
+                        
+                        
+                            <div layout="column" style="width: 50%;">
+                            <p style="font-size: 53px;color: orange; margin-bottom:5px;">3.4</p>
+                            <p>25 Nov 2016</p>
+                            </div>
+                            <div layout="column" style="width: 90%;" class="para">
+                                <p>Would recomended: <b>YES</b></p>
+                                <p>Level of Competitiveness: <b>6.8</b></p>
+                                <p>Saftey: <b>6.8</b></p>
+                            </div>
+                            <div layout="column" style="width: 90%;padding:15px; padding-top:1px;" class="para">
+                         <div layout="row" style="padding-right:23px;">
+                         <div class="chip">GOOD</div>
+                        <div class="chip">TALENTED</div>
+                         <div class="chip">COACH</div>
+                      </div>
+                           <div style="padding-right:23px;">
+                               
+                               <p style="text-align:justify;">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sunt, totam tempore nulla? Repudiandae in soluta amet ipsum ullam, aut vitae eligendi fugit ipsam repellat minima. Et esse, assumenda. Amet!
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, dignissimos et ullam magnam deleniti, dolorem eos quasi quia cupiditate distinctio voluptatem vero a numquam obcaecati, similique error maiores beatae enim.
+                               </p>
+                               
+                               </div>     
+                            </div>
+                        </div>
+                        
+                        
+                                        
+                    
+               <md-divider></md-divider>
+                    
+                    
+                    
+                                        <div layout="row" style="padding: 15px;">
+                        
+                        
+                            <div layout="column" style="width: 50%;">
+                            <p style="font-size: 53px;color: orange; margin-bottom:5px;">3.4</p>
+                            <p>25 Nov 2016</p>
+                            </div>
+                            <div layout="column" style="width: 90%;" class="para">
+                                <p>Would recomended: <b>YES</b></p>
+                                <p>Level of Competitiveness: <b>6.8</b></p>
+                                <p>Saftey: <b>6.8</b></p>
+                            </div>
+                            <div layout="column" style="width: 90%;padding:15px; padding-top:1px;" class="para">
+                         <div layout="row" style="padding-right:23px;">
+                         <div class="chip">GOOD</div>
+                        <div class="chip">TALENTED</div>
+                         <div class="chip">COACH</div>
+                      </div>
+                           <div style="padding-right:23px;">
+                               
+                               <p style="text-align:justify;">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sunt, totam tempore nulla? Repudiandae in soluta amet ipsum ullam, aut vitae eligendi fugit ipsam repellat minima. Et esse, assumenda. Amet!
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, dignissimos et ullam magnam deleniti, dolorem eos quasi quia cupiditate distinctio voluptatem vero a numquam obcaecati, similique error maiores beatae enim.
+                               </p>
+                               
+                               </div>     
+                            </div>
+                        </div>
+                        
+                        
+                                        
+                    
+               <md-divider></md-divider>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!--comments end-->
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!--<md-grid-list md-cols-xs="4" md-cols-gt="8" md-cols-xl="8" md-cols-gt-md="8" md-row-height="2:1" md-gutter="12px" md-gutter-gt-sm="8px">
 
                     <md-grid-tile md-rowspan="3" md-colspan="2" md-colspan-sm="2" md-colspan-xs="2">
                         <h1 style="color:lime;font-size: 4em">3.4</h1>
@@ -351,7 +592,7 @@
                     </md-grid-tile>
                     <md-divider vertical></md-divider>
 
-                </md-grid-list>
+                </md-grid-list>-->
 
                 <!--<div layout="row">
                 <md-input-container>
@@ -367,15 +608,6 @@
             </md-content>
         </div>
     </div>
-
-
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-
-    <!-- Angular Material Library -->
-    <script src="node_modules/angular-material/angular-material.min.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
